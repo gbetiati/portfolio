@@ -1,0 +1,77 @@
+.logo {
+  padding: 0.1em;
+  will-change: filter;
+  transition: filter 200ms;
+}
+.logo:hover {
+  filter: drop-shadow(0.1em 0 0.6em #33F522);
+}
+
+.custom-slideInRight {
+  animation-duration: 1s;
+}
+
+.custom-tada {
+  animation-delay:0.4s;
+  animation-duration: 1s;
+}
+
+.custom-lightSpeedInLeft {
+  animation-delay:0.2s;
+  animation-duration: 1.5s;
+}
+
+.custom-lightSpeedInRight {
+  animation-delay:1.5s;
+  animation-duration: 1.5s;
+}
+
+.custom-bounceInDown {
+  animation-delay:2s;
+  animation-duration: 2s;
+}
+
+.custom-pulse {
+  animation-delay:0.7s;
+  animation-duration: 1s;
+}
+
+.customA-fadeInUp {
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
+}
+.customB-fadeInUp {
+  animation-duration: 0.5s;
+  animation-delay:0.6s;
+}
+
+.customC-fadeInUp {
+  animation-duration: 0.5s;
+  animation-delay:1s;
+}
+
+.customD-fadeInUp {
+  animation-duration: 0.5s;
+  animation-delay:1.8s;
+}
+
+.custom-rotateInDownLeft{
+  animation-delay:1.2s;
+}
+
+.custom-fadeInBottomLeft {
+  animation-duration: 1,3s;
+  animation-delay:2.3s;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+#root {
+
+}
