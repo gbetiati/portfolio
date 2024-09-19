@@ -11,25 +11,29 @@ const Navbar = () => {
     { name: 'Usuários', href: '/users', current: false },
   ]
 
-  function gtSobre() {
-    navigate("/Sobre")
+  function gtInicio() {
+    navigate("/Inicio")
   }
   function gtProjetos() {
     navigate("/Projetos")
+  }
+  function gtSobre() {
+    navigate("/Sobre")
   }
   function gtContato() {
     navigate("/Contato")
   }
   
   return (
-    <div className="flex flex-row justify-between bg bg-[#05071a82] p-5">
+    <div className="flex flex-row justify-between bg bg-[#3657fd38] py-4 px-8">
       <div>
         <div className="text-xl font-bold ">Guilherme Agusto B.H.</div>
       </div>
-      <div className="flex flex-row space-x-6 mr-3">
-        <button className="text text-sm font-mono hover:text-green-400" onClick={gtSobre}>Sobre</button>
-        <button className="text text-sm font-mono hover:text-green-400" onClick={gtProjetos}>Projetos</button>
-        <button className="text  text-sm font-mono hover:text-green-400" onClick={gtContato}>Contato</button>
+      <div className="flex flex-row space-x-7 mr-2">
+        <button className="text text-sm font-mono hover:text-[#3656fd]" onClick={gtInicio}>Inicio</button>
+        <button className="text text-sm font-mono hover:text-[#3656fd]" onClick={gtProjetos}>Projetos</button>
+        <button className="text  text-sm font-mono hover:text-[#3656fd]" onClick={gtSobre}>Sobre</button>
+        <button className="text  text-sm font-mono hover:text-[#3656fd]" onClick={gtContato}>Contato</button>
       </div>
     </div>
   );

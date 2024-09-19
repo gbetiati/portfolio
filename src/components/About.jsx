@@ -3,11 +3,11 @@ import Stack from "./Stack";
 const About = () => {
   return (
 
-    <div className="h-full pb-16  items-center bg-[#030f15]">
+    <div className="h-full pb-16  items-center bg-[#0e0e0e]">
       <div className="pt-20 mx-14">
         <div className="text text-white">
           <div className="animate__animated animate__lightSpeedInRight custom-lightSpeedInLeft">
-            <div className="text-3xl mb-8 first-line:bg-black text-green-400 font-mono">Sobre</div>
+            <div className="text-4xl mb-8 text-[#3656fd] font-bold">Sobre</div>
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customB-fadeInUp">
@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div>
           <div className="animate__animated animate__lightSpeedInLeft custom-lightSpeedInRight">
-            <div className="text-3xl mt-14 mb-8 first-line:bg-black text-green-400 font-mono"> Minha Stack</div>
+            <div className="text-4xl mt-20 mb-8 text-[#3656fd] font-bold"> Minha Stack</div>
           </div>
           <br />
           <Stack />

@@ -3,8 +3,10 @@ import './App.css'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 import Stack from './components/Stack'
-import Navbar from './components/NavBar'
+import Navbar from './components/Navbar'
+
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
 
 
@@ -16,10 +18,11 @@ function App() {
  <Router>
         <Navbar />
         <Routes>
-          <Route path="/#" element={<Home />} />
-          <Route path="/Sobre" element={<Home />} />
+          <Route path="/*" element={<Home />} />
+          <Route path="/Inicio" element={<Home />} />
           <Route path="/Projetos" element={<Projects />} />
-          <Route path="/Contato" element={<About />} />
+          <Route path="/Sobre" element={<About />} />
+          <Route path="/Contato" element={<Contact />} />
         </Routes>
       </Router>
     </>

@@ -42,12 +42,12 @@ const Projects = () => {
   let nextId = 0;
 
   return (
-    <div className="h-full pb-16 items-center bg-[#030f15]">
+    <div className="h-full pb-16 items-center bg-[#0e0e0e]">
       <div className="pt-20 mx-14">
         <div className="text text-white">
 
           <div className="animate__animated animate__rotateInDownLeft custom-rotateInDownLeft">
-          <div className="text-3xl mb-9 first-line:bg-black text-green-500 font-mono">Projetos</div>
+          <div className="text-4xl mb-12 text-[#3656fd] font-bold">Projetos</div>
           </div>
           <br />
 
