@@ -29,11 +29,11 @@ const Navbar = () => {
           <div className="animate__animated animate__fadeInBottomLeft custom-fadeInBottomLeft">
             <div className="flex flex-row space-x-8">
               <button onClick={gtContact} className="bg bg-[#3656fd] text-md text-black font-mono px-7 py-2 rounded-md fi hover:opacity-75">Entre em contato</button>
-              <button className="bg bg-transparent border-[0.4px] border-white text-md px-7 py-2 font-mono text-white  rounded-md hover:bg-zinc-300 hover:text-black"> Curriculo </button>
+              <button className="bg bg-transparent border-[0.1px] border-zinc-400 text-md px-7 py-2 font-mono text-zinc-100  rounded-md hover:bg-zinc-300 hover:text-black"> Curriculo </button>
             </div>
           </div>
         </div>
-        <div className="flex flex-row space-x-2">
+        <div className="flex flex-row space-x-2 opacity-80">
           <img src={my} alt="" />
         </div>
       </div>

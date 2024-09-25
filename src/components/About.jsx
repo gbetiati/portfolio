@@ -11,14 +11,20 @@ const About = () => {
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customB-fadeInUp">
-            <div className="text font-mono text-zinc-100">
-              Hello, My name is Aayush Kurup. I am a Software Engineer from Bhopal, Madhya Pradesh, India. Currently, I am employed by Orah as Software Engineer.
+            <div className="text font-mono text-zinc-200">
+              Olá, meu nome é Guilherme Augusto Betiat Heusser. Eu sou um desenvolvedor full-stack. Estou atualmente trabalhando com suporte técnico de informática na cidade de Balneário Camboriú/SC.
             </div>
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customC-fadeInUp">
             <div className="text font-mono text-zinc-200">
-              I love working on a variety of technologies including Web Development, Mobile App Development and Deep Learning. My goal is to build highly performant applications that solve real-world problems and provide users with an awesome experience.
+              Gosto de trabalhar com tecnologias de diversos tipos tanto para desenvolvimento como para outras atividades, no desenvolvimento busco explorar vertentes que se complementam como front-end e back-end, e além do desenvolvimento porém em conjunto, busco aprimorar o conhecimento em experiencia do usuário e interface atrativas (UX e UI).
+            </div>
+          </div>
+          <br />
+          <div className="animate__animated animate__fadeInUp customD-fadeInUp">
+            <div className="text font-mono text-zinc-200">
+            Meu atual projeto em desenvolvimento é um aplicativo que será utilizado na organização da prestação de serviços para empresas da família, no ramo de prestação de serviços. No momento também exploro tecnologias de automação como n8n e tecnologias tangentes a IA assistent.
             </div>
           </div>
         </div>

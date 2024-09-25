@@ -1,77 +1,169 @@
 import ProjectItem from "./ProjectItem";
-import desktopSS from "../assets/desktopSS.png"
-import mobilejpg from "../assets/mobile.jpg"
-import ecommprint from "../assets/ecommprint.png"
+import desktopSS from "../assets/desktopSS.png";
+import mobilejpg from "../assets/mob.jpg";
+import ecommprint from "../assets/ecommprint.png";
 
-
-import 'animate.css';
+import "animate.css";
+import { useState } from "react";
 
 const Projects = () => {
+  const [mobileProjects, setMobileProjects] = useState(false);
+
+  const jsstyle = {
+    color:"#ffff00" 
+  };
+  const tsstyle = {
+    color:"#0040ff" 
+  };
+  const mongostyle = {
+    color:"#80ff00" 
+  };
+  const tailwindstyle = {
+    color:"#4000ff" 
+  };
+  const nextstyle = {
+    color:"#757575" 
+  };
+  const reactstyle = {
+    color:"#0288D1" 
+  };
+  const realmstyle = {
+    color:"#b41818" 
+  };
+
+  const jsskill = <span style={jsstyle}> Javascript </span>
+  const tsskill = <span style={tsstyle}> Typescript </span>
+  const mongoskill = <span style={mongostyle}> MongoDB </span>
+  const tailwindskill = <span style={tailwindstyle}> Tailwind </span>
+  const nextskill = <span style={nextstyle}> NextJS </span>
+  const reactskill = <span style={reactstyle}> ReactJS </span>
+  const realmskill = <span style={realmstyle}> Realm </span>
+  const rnskill = <span style={reactstyle}> React Native </span>
 
   const ProjectsObj = [
+    { 
+      name: "Sistema de gerenciamento",
+      description:
+        "Esse sistema foi desenvolvido para trabalhar em conjunto com um app mobile, (o qual explico na seção Mobile desta página), no sistema é possível gerenciar rotas e outros dados, os quais são enviados para a API e posteriormentes consultados pelos usuários através do celular. Um ponto central do sistema é a área de verificação de serviços onde é possível verificar quais serviços foram assinados e enviados para o servidor através do aplicativo mobile.",
+      stack: [tsskill, reactskill, mongoskill, tailwindskill],
+      image: desktopSS,
+      link: "https://www.google.com",
+    },
     {
       name: "Ecommerce",
-      description: "A CLI for running firebase database and firestore queries on the shell. Just install the package globally using npm or yarn, select the service (Realtime Database or Cloud Firestore), enter the path to config file and run your queries.",
-      stack: "Typescript, ReactJS, NextJS, MongoDB, Tailwind",
+      description:
+        "Um site no modelo de Ecommerce, onde o usuário pode cadastrar produtos e gerenciá-los. O projeto utiliza NextJS bem como a personalização de renderizações, do lado do cliente e do servidor. Projeto realizado com fim de aprendizado.",
+      stack: [tsskill, reactskill, nextskill, mongoskill, tailwindskill],
       image: ecommprint,
-      link: "https://www.google.com"
-    },
-    {
-      name: "Lista de repositórios API",
-      description: "A CLI for running firebase database and firestore queries on the shell. Just install the package globally using npm or yarn, select the service (Realtime Database or Cloud Firestore), enter the path to config file and run your queries.",
-      stack: "ReactJS, NodeJS, MongoDB, Express",
-      image: desktopSS,
-      link: "https://www.google.com"
-    },
-    {
-      name: "Mobile app | Offline-First",
-      description: "A CLI for running firebase database and firestore queries on the shell. Just install the package globally using npm or yarn, select the service (Realtime Database or Cloud Firestore), enter the path to config file and run your queries.",
-      stack: "Typescript, React Native, Realm, Nativewind",
-      image: mobilejpg,
-      link: "https://www.google.com"
+      link: "https://www.google.com",
     },
     {
       name: "Catálago",
-      description: "A CLI for running firebase database and firestore queries on the shell. Just install the package globally using npm or yarn, select the service (Realtime Database or Cloud Firestore), enter the path to config file and run your queries.",
-      stack: "ReactJS, Tailwind",
-      image: desktopSS,
-      link: "https://www.google.com"
+      description:
+        "Uma Single Page Application desenvolvida para colega que trabalha com venda de velas aromáticas. A ideia do projeto era expor modelos de velas em ,formato de catálago, bem como benefícios e características do produto.",
+      stack: [jsskill, reactskill, tailwindskill],
+      image: desktopSS, 
+      link: "https://www.google.com",
     },
-  ]
+  ];
 
+  const ProjectsMobileObj = [
+    {
+      name: "Todo application | Offline-First",
+      description:
+        "Aplicativo mobile desenvolvido com React Native e Expo, o app tras uma abordagem offline-first, o que torna possível utilizar grande parte dos recursos sem ter conexão com a internet através do banco dedados Realm. Conta com diversas telas e com uma secção de assinatura, onde o usuário coleta assinatura do cliente com uma rúbrica na tela.",
+      stack: [tsskill, realmskill, mongoskill, rnskill],
+      image: mobilejpg, 
+      link: "https://www.google.com",
+    },
+  ];
   let nextId = 0;
 
+  const handleMobile = () => {
+    setMobileProjects(true);
+  };
+
+  const handleWeb = () => {
+    setMobileProjects(false);
+  };
+
+  const styleweb = {
+    color: !mobileProjects ? "#3656fd" : "#dedede",
+    fontWeight: !mobileProjects ? "bold" : "normal",
+  };
+
+  const stylemobile = {
+    color: mobileProjects ? "#3656fd" : "#dedede",
+    fontWeight: mobileProjects ? "bold" : "normal",
+  };
+
+ 
   return (
     <div className="h-full pb-16 items-center bg-[#0e0e0e]">
       <div className="pt-20 mx-14">
         <div className="text text-white">
-
           <div className="animate__animated animate__rotateInDownLeft custom-rotateInDownLeft">
-          <div className="text-4xl mb-12 text-[#3656fd] font-bold">Projetos</div>
+            <div className="text-4xl mb-12 text-[#3656fd] font-bold">
+              Projetos
+            </div>
           </div>
-          <br />
+          <br /> 
+          <div className="animate__animated animate__zoomInDown custom-zoomInDown">
+          <div className="rounded-full border-zinc-600 border-[0.2px] w-56 py-1.5 px-9 mb-14">
+            <div className="flex flex-row justify-between">
+              <div>
+                <button onClick={handleWeb}>
+                  <div style={styleweb} className="font-mono logo">
+                    Web
+                  </div>
+                </button>
+              </div>
+              <div className="h-auto w-[0.1rem] bg-zinc-600"></div>
+              <button onClick={handleMobile}>
+                  <div style={stylemobile} className="font-mono logo">
+                    Mobile
+                  </div>
+                </button>
+            </div>
+          </div>
+          </div>
 
-          <div className="animate__animated animate__slideInLeft custom-slideInLeft">
-            <div className="animate__animated animate__pulse custom-pulse">
-              <div className="flex flex-col space-y-7 ">
-                {ProjectsObj.map(item =>
-                  <ProjectItem
-                    key={nextId++}
-                    projectImg={item.image}
-                    projectTitle={item.name}
-                    projectDsc={item.description}
-                    projectStack={item.stack}
-                    projectLinks={item.link}
-                  />
-                )}
+          {mobileProjects ? (
+            <div className="animate__animated animate__slideInLeft custom-slideInLeft">
+              <div className="animate__animated animate__pulse custom-pulse">
+                <div className="flex flex-col space-y-7">
+                  {ProjectsMobileObj.map((item) => (
+                    <ProjectItem
+                      key={nextId++}
+                      projectImg={item.image}
+                      projectTitle={item.name}
+                      projectDsc={item.description}
+                      projectStack={item.stack}
+                      projectLinks={item.link}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
-
-
-          </div>
-
+          ) : (
+            <div className="animate__animated animate__slideInLeft custom-slideInLeft">
+              <div className="animate__animated animate__pulse custom-pulse">
+                <div className="flex flex-col space-y-7 ">
+                  {ProjectsObj.map((item) => (
+                    <ProjectItem
+                      key={nextId++}
+                      projectImg={item.image}
+                      projectTitle={item.name}
+                      projectDsc={item.description}
+                      projectStack={item.stack}
+                      projectLinks={item.link}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
-
       </div>
     </div>
   );

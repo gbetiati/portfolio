@@ -2,6 +2,10 @@ import reactfig from "../assets/react.svg"
 import jsfig from "../assets/jssvg.svg"
 import StackItem from "./StackItem"
 import mongofig from "../assets/mongodb.svg"
+import tsfig from "../assets/tssvg.svg"
+import nextfig from "../assets/nextjssvg.svg"
+import tailwindfig from "../assets/tailwindsvg.svg"
+import rdb from "../assets/realmdb.png"
 
 const Skills = [
   {
@@ -17,29 +21,26 @@ const Skills = [
     fig: mongofig
   },
   {
-    name: 'Javascript',
-    fig: jsfig 
+    name: 'Typescript',
+    fig: tsfig 
   },
   {
-    name: 'React',
-    fig: reactfig
+    name: 'Realm',
+    fig: rdb
   },
   {
-    name: 'Mongodb',
-    fig: mongofig
+    name: 'Tailwind',
+    fig: tailwindfig
   },
   {
-    name: 'Javascript',
-    fig: jsfig 
+    name: 'NextJs',
+    fig: nextfig
   },
   {
-    name: 'React',
-    fig: reactfig
+    name: 'React Native',
+    fig: reactfig 
   },
-  {
-    name: 'Mongodb',
-    fig: mongofig
-  }
+ 
 ]
 
 let nextId = 0

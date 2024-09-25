@@ -1,10 +1,14 @@
 .logo {
-  padding: 0.1em;
   will-change: filter;
-  transition: filter 200ms;
+  transition: filter 400ms;
 }
 .logo:hover {
-  filter: drop-shadow(0.1em 0 0.9em #2050ff);
+  filter: drop-shadow(0 0 0.6em #dadada);
+}
+
+.custom-zoomInDown {
+  animation-delay: 1.7s;
+  animation-duration: 2s;
 }
 
 .custom-slideInRight {
@@ -22,12 +26,12 @@
 }
 
 .custom-lightSpeedInRight {
-  animation-delay:1.5s;
+  animation-delay:2.3s;
   animation-duration: 1.5s;
 }
 
 .custom-bounceInDown {
-  animation-delay:2s;
+  animation-delay:3s;
   animation-duration: 2s;
 }
 
@@ -47,7 +51,7 @@
 
 .customC-fadeInUp {
   animation-duration: 0.5s;
-  animation-delay:1s;
+  animation-delay:1.2s;
 }
 
 .customD-fadeInUp {
@@ -61,7 +65,7 @@
 
 .custom-fadeInBottomLeft {
   animation-duration: 1,3s;
-  animation-delay:2.3s;
+  animation-delay:2.9s;
 }
 
 
@@ -69,9 +73,4 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-
-#root {
-
 }

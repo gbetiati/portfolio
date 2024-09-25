@@ -31,7 +31,7 @@ const ProjectItem = ({ projectImg, projectTitle, projectDsc, projectLinks, proje
                 </div>
                 <>
                     <div className="text text-sm font-mono pt-16">
-                        <div className="text text-[#3656fd]"> Tecnologias utilizadas: {projectStack} </div>
+                        <div className="text text-zinc-400"> Tecnologias utilizadas: {projectStack} </div>
                     </div>
                 </>
 
