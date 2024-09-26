@@ -61,7 +61,7 @@ const Projects = () => {
     {
       name: "Catálago",
       description:
-        "Uma Single Page Application desenvolvida para colega que trabalha com venda de velas aromáticas. A ideia do projeto era expor modelos de velas em, formato de catálago, bem como benefícios e características do produto.",
+        "Uma Single Page Application desenvolvida para colega que trabalha com vendas, A ideia do projeto era expor modelos de velas em formato de catálago, e também benefícios e características do produto.",
       stack: [jsskill, reactskill, tailwindskill],
       image: velasprint,
       link: "https://github.com/gbetiati/LP-React-Tawildind",
