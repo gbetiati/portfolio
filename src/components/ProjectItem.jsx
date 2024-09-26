@@ -22,16 +22,16 @@ const ProjectItem = ({ projectImg, projectTitle, projectDsc, projectLinks, proje
                 </div>
             </div>
             <div className="px-3 pr-10 space-y-10 text-xl">
-                <div className="text text-2xl font-mono pb-4 text-zinc-50">
+                <div className="text text-2xl font-mono pb-4 mt-3 text-zinc-100">
                     {projectTitle}
                 </div>
 
-                <div className="text text-sm font-mono text-zinc-400">
+                <div className="text text-sm font-mono text-zinc-300">
                     {projectDsc}
                 </div>
                 <>
                     <div className="text text-sm font-mono pt-16">
-                        <div className="text text-zinc-400"> Tecnologias utilizadas: {projectStack} </div>
+                        <div className="text text-zinc-100"> Tecnologias utilizadas: {projectStack} </div>
                     </div>
                 </>
 

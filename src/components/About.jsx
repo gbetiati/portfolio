@@ -24,7 +24,7 @@ const About = () => {
           <br />
           <div className="animate__animated animate__fadeInUp customD-fadeInUp">
             <div className="text font-mono text-zinc-200">
-            Meu atual projeto em desenvolvimento é um aplicativo que será utilizado na organização da prestação de serviços para empresas da família, no ramo de prestação de serviços. No momento também exploro tecnologias de automação como n8n e tecnologias tangentes a IA assistent.
+            Meu atual projeto em desenvolvimento é um aplicativo que será utilizado na organização da prestação de serviços para empresas da família, no ramo de prestação de serviços.
             </div>
           </div>
         </div>

@@ -1,7 +1,8 @@
 import ProjectItem from "./ProjectItem";
 import desktopSS from "../assets/desktopSS.png";
 import mobilejpg from "../assets/mob.jpg";
-import ecommprint from "../assets/ecommprint.png";
+import ecommprint from "../assets/ecommpc.jpg";
+import velasprint from "../assets/sitevelas.jpg"
 
 import "animate.css";
 import { useState } from "react";
@@ -10,25 +11,25 @@ const Projects = () => {
   const [mobileProjects, setMobileProjects] = useState(false);
 
   const jsstyle = {
-    color:"#ffff00" 
+    color:"#FFD600" 
   };
   const tsstyle = {
-    color:"#0040ff" 
+    color:"#1976D2" 
   };
   const mongostyle = {
-    color:"#80ff00" 
+    color:"#4CAF50" 
   };
   const tailwindstyle = {
-    color:"#4000ff" 
+    color:"#00ACC1" 
   };
   const nextstyle = {
-    color:"#757575" 
+    color:"#E8E8E8" 
   };
   const reactstyle = {
-    color:"#0288D1" 
+    color:"#00D8FF" 
   };
   const realmstyle = {
-    color:"#b41818" 
+    color:"#E65094" 
   };
 
   const jsskill = <span style={jsstyle}> Javascript </span>
@@ -47,23 +48,23 @@ const Projects = () => {
         "Esse sistema foi desenvolvido para trabalhar em conjunto com um app mobile, (o qual explico na seção Mobile desta página), no sistema é possível gerenciar rotas e outros dados, os quais são enviados para a API e posteriormentes consultados pelos usuários através do celular. Um ponto central do sistema é a área de verificação de serviços onde é possível verificar quais serviços foram assinados e enviados para o servidor através do aplicativo mobile.",
       stack: [tsskill, reactskill, mongoskill, tailwindskill],
       image: desktopSS,
-      link: "https://www.google.com",
+      link: "https://github.com/gbetiati/DesktopToMobileRegister",
     },
     {
       name: "Ecommerce",
       description:
-        "Um site no modelo de Ecommerce, onde o usuário pode cadastrar produtos e gerenciá-los. O projeto utiliza NextJS bem como a personalização de renderizações, do lado do cliente e do servidor. Projeto realizado com fim de aprendizado.",
+        "Um site no modelo de Ecommerce, onde o usuário pode cadastrar produtos e gerenciá-los. O projeto utiliza NextJS e Prisma ORM, conta com carrinho de compras e listagem de itens. Projeto realizado com fim de aprendizado.",
       stack: [tsskill, reactskill, nextskill, mongoskill, tailwindskill],
       image: ecommprint,
-      link: "https://www.google.com",
+      link: "https://github.com/gbetiati/next-comm",
     },
     {
       name: "Catálago",
       description:
-        "Uma Single Page Application desenvolvida para colega que trabalha com venda de velas aromáticas. A ideia do projeto era expor modelos de velas em ,formato de catálago, bem como benefícios e características do produto.",
+        "Uma Single Page Application desenvolvida para colega que trabalha com venda de velas aromáticas. A ideia do projeto era expor modelos de velas em, formato de catálago, bem como benefícios e características do produto.",
       stack: [jsskill, reactskill, tailwindskill],
-      image: desktopSS, 
-      link: "https://www.google.com",
+      image: velasprint,
+      link: "https://github.com/gbetiati/LP-React-Tawildind",
     },
   ];
 
@@ -73,8 +74,7 @@ const Projects = () => {
       description:
         "Aplicativo mobile desenvolvido com React Native e Expo, o app tras uma abordagem offline-first, o que torna possível utilizar grande parte dos recursos sem ter conexão com a internet através do banco dedados Realm. Conta com diversas telas e com uma secção de assinatura, onde o usuário coleta assinatura do cliente com uma rúbrica na tela.",
       stack: [tsskill, realmskill, mongoskill, rnskill],
-      image: mobilejpg, 
-      link: "https://www.google.com",
+      image: mobilejpg,
     },
   ];
   let nextId = 0;
@@ -109,7 +109,7 @@ const Projects = () => {
           </div>
           <br /> 
           <div className="animate__animated animate__zoomInDown custom-zoomInDown">
-          <div className="rounded-full border-zinc-600 border-[0.2px] w-56 py-1.5 px-9 mb-14">
+          <div className="border-zinc-600 border-[0.2px] w-56 py-1.5 px-9 mb-14">
             <div className="flex flex-row justify-between">
               <div>
                 <button onClick={handleWeb}>

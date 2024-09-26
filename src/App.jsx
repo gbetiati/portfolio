@@ -4,7 +4,6 @@ import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-import Stack from './components/Stack'
 import Navbar from './components/Navbar'
 
 import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
@@ -18,7 +17,7 @@ function App() {
  <Router>
         <Navbar />
         <Routes>
-          <Route path="/portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Inicio" element={<Home />} />
           <Route path="/Projetos" element={<Projects />} />
           <Route path="/Sobre" element={<About />} />
