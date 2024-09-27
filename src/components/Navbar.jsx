@@ -18,7 +18,7 @@ const Navbar = () => {
   }
   
   return (
-    <div className="flex flex-row justify-between bg-[#3657fd0c] py-3 px-9">
+    <div className="flex flex-row justify-between py-2 px-8 mynavbar">
       <div>
         <div className="text-2xl font-mono text-[#c2d3ee]"> GB </div>
       </div>

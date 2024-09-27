@@ -12,7 +12,7 @@ const About = () => {
           <br />
           <div className="animate__animated animate__fadeInUp customB-fadeInUp">
             <div className="text font-mono text-zinc-200">
-              Olá, meu nome é Guilherme Augusto Betiat Heusser. Eu sou um desenvolvedor full-stack. Estou atualmente trabalhando com suporte técnico de informática na cidade de Balneário Camboriú/SC.
+              Olá, meu nome é Guilherme Augusto Betiati Heusser. Eu sou um desenvolvedor full-stack. Estou atualmente trabalhando com suporte técnico de informática na cidade de Balneário Camboriú/SC.
             </div>
           </div>
           <br />
