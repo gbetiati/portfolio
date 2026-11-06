@@ -1,36 +1,38 @@
 import Stack from "./Stack";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
 
     <div className="h-full pb-16  items-center bg-[#0e0e0e]">
       <div className="pt-20 mx-14">
         <div className="text text-white">
           <div className="animate__animated animate__lightSpeedInRight custom-lightSpeedInLeft">
-            <div className="text-4xl mb-8 text-[#3656fd] font-bold">Sobre</div>
+            <div className="text-4xl mb-8 text-[#3656fd] font-bold">{t("about.title")}</div>
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customB-fadeInUp">
             <div className="text font-mono text-zinc-200">
-              Olá, meu nome é Guilherme Augusto Betiati Heusser. Eu sou um desenvolvedor full-stack. Estou atualmente trabalhando com suporte técnico de informática na cidade de Balneário Camboriú/SC.
+              {t("about.paragraph1")}
             </div>
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customC-fadeInUp">
             <div className="text font-mono text-zinc-200">
-              Gosto de trabalhar com tecnologias de diversos tipos tanto para desenvolvimento como para outras atividades, no desenvolvimento busco explorar vertentes que se complementam como front-end e back-end, e além do desenvolvimento porém em conjunto, busco aprimorar o conhecimento em experiencia do usuário e interface atrativas (UX e UI).
+              {t("about.paragraph2")}
             </div>
           </div>
           <br />
           <div className="animate__animated animate__fadeInUp customD-fadeInUp">
             <div className="text font-mono text-zinc-200">
-            Meu atual projeto em desenvolvimento é um aplicativo que será utilizado na organização da prestação de serviços para empresas da família, no ramo de prestação de serviços.
+            {t("about.paragraph3")}
             </div>
           </div>
         </div>
         <div>
           <div className="animate__animated animate__lightSpeedInLeft custom-lightSpeedInRight">
-            <div className="text-4xl mt-20 mb-8 text-[#3656fd] font-bold"> Minha Stack</div>
+            <div className="text-4xl mt-20 mb-8 text-[#3656fd] font-bold"> {t("about.myStack")}</div>
           </div>
           <br />
           <Stack />

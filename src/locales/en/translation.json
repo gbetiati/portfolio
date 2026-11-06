@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello,",
+    "myNameIs": "My name is",
+    "role": "I am a <br/> Full-Stack developer",
+    "getInTouch": "Get in touch",
+    "resume": "Resume"
+  },
+  "about": {
+    "title": "About",
+    "paragraph1": "Hello, my name is Guilherme Augusto Betiati Heusser. I am a full-stack developer. I am currently working in IT technical support in Balneário Camboriú, SC, Brazil.",
+    "paragraph2": "I enjoy working with all kinds of technologies, both for development and for other activities. In development, I explore complementary areas such as front-end and back-end, and alongside development I work on improving my knowledge of user experience and attractive interfaces (UX and UI).",
+    "paragraph3": "My current project is an app that will be used to organize service delivery for family-owned businesses in the services industry.",
+    "myStack": "My Stack"
+  },
+  "projects": {
+    "title": "Projects",
+    "web": "Web",
+    "mobile": "Mobile",
+    "technologiesUsed": "Technologies used:",
+    "items": {
+      "management": {
+        "name": "Management system",
+        "description": "This system was built to work together with a mobile app (described in the Mobile section of this page). It lets you manage routes and other data, which are sent to the API and later accessed by users on their phones. A core part of the system is the service verification area, where you can check which services were signed and sent to the server through the mobile app."
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "description": "An e-commerce website where users can add and manage products. The project uses NextJS and Prisma ORM and includes a shopping cart and product listings. Built as a learning project."
+      },
+      "catalog": {
+        "name": "Catalog",
+        "description": "A Single Page Application built for a friend who works in sales. The goal was to showcase candle models in a catalog format, along with the product's benefits and features."
+      },
+      "todo": {
+        "name": "Todo application | Offline-First",
+        "description": "A mobile app built with React Native and Expo. It takes an offline-first approach, using the Realm database so most features work without an internet connection. It has several screens and a signature section, where the user collects the customer's signature on screen."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact me!",
+    "whatsappMessage": "Hello! We received your portfolio"
+  }
+}

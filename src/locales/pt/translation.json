@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "greeting": "Olá,",
+    "myNameIs": "Meu nome é",
+    "role": "Eu sou um desenvolvedor <br/> Full-Stack",
+    "getInTouch": "Entre em contato",
+    "resume": "Currículo"
+  },
+  "about": {
+    "title": "Sobre",
+    "paragraph1": "Olá, meu nome é Guilherme Augusto Betiati Heusser. Eu sou um desenvolvedor full-stack. Estou atualmente trabalhando com suporte técnico de informática na cidade de Balneário Camboriú/SC.",
+    "paragraph2": "Gosto de trabalhar com tecnologias de diversos tipos, tanto para desenvolvimento como para outras atividades. No desenvolvimento, busco explorar vertentes que se complementam, como front-end e back-end, e, em conjunto com o desenvolvimento, busco aprimorar o conhecimento em experiência do usuário e interfaces atrativas (UX e UI).",
+    "paragraph3": "Meu atual projeto em desenvolvimento é um aplicativo que será utilizado na organização da prestação de serviços para empresas da família, no ramo de prestação de serviços.",
+    "myStack": "Minha Stack"
+  },
+  "projects": {
+    "title": "Projetos",
+    "web": "Web",
+    "mobile": "Mobile",
+    "technologiesUsed": "Tecnologias utilizadas:",
+    "items": {
+      "management": {
+        "name": "Sistema de gerenciamento",
+        "description": "Esse sistema foi desenvolvido para trabalhar em conjunto com um app mobile (o qual explico na seção Mobile desta página). No sistema é possível gerenciar rotas e outros dados, os quais são enviados para a API e posteriormente consultados pelos usuários através do celular. Um ponto central do sistema é a área de verificação de serviços, onde é possível verificar quais serviços foram assinados e enviados para o servidor através do aplicativo mobile."
+      },
+      "ecommerce": {
+        "name": "Ecommerce",
+        "description": "Um site no modelo de Ecommerce, onde o usuário pode cadastrar produtos e gerenciá-los. O projeto utiliza NextJS e Prisma ORM, conta com carrinho de compras e listagem de itens. Projeto realizado com fim de aprendizado."
+      },
+      "catalog": {
+        "name": "Catálogo",
+        "description": "Uma Single Page Application desenvolvida para um colega que trabalha com vendas. A ideia do projeto era expor modelos de velas em formato de catálogo, e também benefícios e características do produto."
+      },
+      "todo": {
+        "name": "Aplicativo de tarefas | Offline-First",
+        "description": "Aplicativo mobile desenvolvido com React Native e Expo. O app traz uma abordagem offline-first, o que torna possível utilizar grande parte dos recursos sem conexão com a internet através do banco de dados Realm. Conta com diversas telas e com uma seção de assinatura, onde o usuário coleta a assinatura do cliente com uma rubrica na tela."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contate-me!",
+    "whatsappMessage": "Olá! Recebemos seu portfólio"
+  }
+}

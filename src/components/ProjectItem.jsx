@@ -1,9 +1,11 @@
 import desktopSS from "../assets/desktopSS.png"
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 
 const ProjectItem = ({ projectImg, projectTitle, projectDsc, projectLinks, projectStack }) => {
+    const { t } = useTranslation();
     return (
         <div className="flex md:flex-row-reverse justify-between pb-4 px-2 pr-8 bg-[#0a284642] sm:flex flex-col-reverse items-center hover:bg-[#19294d56]">
             <div className="">
@@ -31,7 +33,7 @@ const ProjectItem = ({ projectImg, projectTitle, projectDsc, projectLinks, proje
                 </div>
                 <>
                     <div className="text text-sm font-mono pt-16">
-                        <div className="text text-zinc-100"> Tecnologias utilizadas: {projectStack} </div>
+                        <div className="text text-zinc-100"> {t("projects.technologiesUsed")} {projectStack} </div>
                     </div>
                 </>
 

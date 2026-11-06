@@ -1,12 +1,14 @@
 import my from "../assets/fthome.jpeg";
 import "animate.css";
 import { useNavigate } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const gtContact = () => {
-    navigate("/Sobre");
+    navigate("/about");
   };
 
   return (
@@ -14,12 +16,12 @@ const Navbar = () => {
       <div className="flex flex-col px-16 mb-20 sm:flex-row justify-between space-x-60">
         <div className="">
           <div className="animate__animated animate__fadeInUp customA-fadeInUp">
-            <div className="text text-gray-200 text-xl mb-2"> Olá, </div>
+            <div className="text text-gray-200 text-xl mb-2"> {t("home.greeting")} </div>
           </div>
           <div className="animate__animated animate__fadeInUp customB-fadeInUp">
             <div className="text text-gray-200 text-5xl font-bold mb-1">
               {" "}
-              Meu nome é{" "}
+              {t("home.myNameIs")}{" "}
             </div>
           </div>
           <div className="animate__animated animate__fadeInUp customC-fadeInUp">
@@ -31,7 +33,7 @@ const Navbar = () => {
           <div className="animate__animated animate__fadeInUp customE-fadeInUp">
             <div className="text text-gray-400 text-2xl mb-8">
               {" "}
-              Eu sou um desenvolver <br /> Full-Stack{" "}
+              <Trans i18nKey="home.role" />{" "}
             </div>
           </div>
           <div className="animate__animated animate__fadeInBottomLeft custom-fadeInBottomLeft">
@@ -40,13 +42,13 @@ const Navbar = () => {
                 onClick={gtContact}
                 className="bg bg-[#3656fd] text-md text-black font-mono px-7 py-2 rounded-md fi hover:opacity-75"
               >
-                Entre em contato
+                {t("home.getInTouch")}
               </button>
               <a
-                href="https://docs.google.com/document/d/1Dv1UNtQ0EFFALo7pdXA2dPBooCp6bwsK/edit?usp=sharing&ouid=117987645055076769256&rtpof=true&sd=true"
+                href="https://drive.google.com/file/d/1v1b_5XvEWaR1tZAYd5uIlGe-9sevB5T4/view?usp=drive_link"
                 className="bg bg-transparent border-[0.1px] border-zinc-400 text-md px-7 py-2 font-mono text-zinc-100  rounded-md hover:bg-zinc-300 hover:text-black"
               >
-                Curriculo
+                {t("home.resume")}
               </a>
             </div>
           </div>
