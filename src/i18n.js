@@ -21,7 +21,7 @@ i18n
     load: "languageOnly",
     fallbackLng: "en",
     detection: {
-      order: ["localStorage", "navigator"],
+      order: ["localStorage"],
       caches: ["localStorage"],
     },
     interpolation: {
